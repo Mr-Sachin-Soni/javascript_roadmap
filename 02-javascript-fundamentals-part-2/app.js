@@ -327,3 +327,67 @@
 // }
 
 // console.log(tips, total, bills);
+
+// To find the largest number among array
+
+// const calMax = function (findLargeNumber) {
+//   let max = findLargeNumber[0];
+
+//   for (let i = 0; i < findLargeNumber.length; i++) {
+//     if (findLargeNumber[i] > max) max = findLargeNumber[i];
+//   }
+//   console.log(max);
+// };
+
+// calMax([21, 43, 57, 23]);
+
+// How to reverse an array
+
+// const array = [5, 3, 10, 0, 29];
+
+// let reversedArray = [];
+
+// for (let n = array.length - 1; n >= 0; n--) {
+//   reversedArray.push(array[n]);
+// }
+
+// console.log(reversedArray);
+
+// console.log(array.reverse());
+
+// How to reverse a string
+
+// const fName = "sachin";
+
+// let reversedStr = "";
+
+// for (let i = fName.length - 1; i >= 0; i--) {
+//   reversedStr += fName[i];
+// }
+// console.log(reversedStr);
+// console.log(fName.split("")).reverse().join("");
+
+// const measurement = function () {
+//   const measure = {
+//     type: "temp",
+//     unit: "celsius",
+//     value: Number(prompt("Enter the temperature :")),
+//   };
+
+//   console.log(measure);
+
+//   const data = measure.value + 120;
+//   return data;
+// };
+
+// console.log(measurement());
+
+// Merging 2 arrays
+
+// const arr1 = [1, 4, 32, 67, 33, 0];
+// const arr2 = [0, 24, 76, 88, 12];
+
+// const mergedArr = [...arr1, ...arr2];
+
+// console.log("mergedArr", mergedArr);
+// console.log("Concat", arr1.concat(arr2));
