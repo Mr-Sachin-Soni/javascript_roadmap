@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess my Number</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <section class="score-box">
+      <h2>Score: <span class="score">0</span></h2>
+      <h2>Highest Score: <span class="high-score">0</span></h2>
+    </section>
+
+    <h1 class="main-title">🤔 Guess the secret number? 🤔</h1>
+    <h4 class="sub-title">(Between 1 to 10)</h4>
+
+    <section class="guessed-number">
+      <div class="number-box">
+        <h2><span class="number">?</span></h2>
+      </div>
+    </section>
+
+    <section class="input-box">
+      <div class="input-area">
+        <input type="number" class="input" />
+        <button class="check-btn">Check</button>
+      </div>
+    </section>
+    <section class="play-again">
+      <button class="reset">Play Again!</button>
+    </section>
+  </body>
+</html>
