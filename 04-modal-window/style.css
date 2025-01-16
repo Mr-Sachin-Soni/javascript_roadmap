@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #b1ef84;
+}
+.wrapper {
+  position: relative;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabs-group {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  margin: 5rem 0;
+}
+
+.tabs-group button {
+  padding: 0.4rem 1.5rem;
+  cursor: pointer;
+  background: brown;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.tabs-group button:hover {
+  background: #842121;
+}
+.modal-box {
+  display: flex;
+  justify-content: center;
+}
+.modal {
+  position: relative;
+  border: 2px solid #000;
+  background: #fff;
+  padding: 4rem;
+  width: 50%;
+  z-index: 2;
+}
+.close-btn {
+  color: #ffffff;
+  border: 1px solid #000;
+  background: #000;
+  border-radius: 50px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 1;
+  /* padding: 1rem; */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.close-btn:hover {
+  background: #fff;
+  color: #000;
+}
+.overlay {
+  display: none;
+  position: absolute;
+  background: #6c6a6a85;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+.hidden {
+  display: none;
+}
+
+/* Media query */
+
+@media (max-width: 768px) {
+  .tabs-group {
+    width: 100%;
+  }
+  .modal {
+    padding: 2rem;
+    width: 90%;
+  }
+}
