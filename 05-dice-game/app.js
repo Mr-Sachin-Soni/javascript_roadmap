@@ -8,6 +8,7 @@ let player1TotalScore = document.querySelector(".p1-total-score");
 let player2Score = document.querySelector(".score-2");
 let player2TotalScore = document.querySelector(".p2-total-score");
 const reset = document.querySelector(".reset-btn");
+const resultMessage = document.querySelector(".resultMessage");
 
 let p1 = 0; // Current dice value for Player 1
 let totalP1 = 0; // Total score for Player 1
@@ -23,16 +24,28 @@ rollDice.addEventListener("click", () => {
     totalP1 += p1;
     player1Score.textContent = p1;
     player1TotalScore.textContent = totalP1;
+    if (totalP1 >= 100) {
+      resultMessage.textContent =
+        "Congrats!🥳  Player 1 has won the game! 🥳🥳";
+      rollDice.disabled = true;
+    }
   } else if (dice != 1 && player2.classList.contains("active-player")) {
     p2 = dice;
     totalP2 += p2;
     player2Score.textContent = p2;
     player2TotalScore.textContent = totalP2;
+    if (totalP2 >= 100) {
+      resultMessage.textContent =
+        "Congrats!🥳  Player 2 has won the game! 🥳🥳";
+      rollDice.disabled = true;
+    }
   } else if (dice == 1 && player1.classList.contains("active-player")) {
+    console.log(dice);
     player1Score.textContent = 0;
     player1.classList.remove("active-player");
     player2.classList.add("active-player");
   } else if (dice == 1 && player2.classList.contains("active-player")) {
+    console.log(dice);
     player2.classList.remove("active-player");
     player1.classList.add("active-player");
   }
@@ -49,4 +62,6 @@ reset.addEventListener("click", () => {
   player1TotalScore.textContent = 0;
   player2Score.textContent = 0;
   player2TotalScore.textContent = 0;
+  resultMessage.textContent = "";
+  rollDice.disabled = false;
 });

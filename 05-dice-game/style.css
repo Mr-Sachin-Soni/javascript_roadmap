@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Jersey 15", serif;
+  font-weight: normal;
 }
 
 body {
@@ -18,7 +20,7 @@ h1 {
 }
 
 .wrapper {
-  margin: 4rem 0;
+  margin: 2rem 0;
   display: flex;
   justify-content: center;
 }
@@ -39,7 +41,8 @@ h1 {
   background: #8a2be2;
   color: #ffffff;
   border: 1px solid #ffffff;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 1rem;
 }
 .reset-btn:hover,
 .roll-dice:hover {
@@ -93,7 +96,8 @@ h1 {
   background: #8a2be2;
   color: #ffffff;
   border: 1px solid #ffffff;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 1rem;
 }
 
 .hold-btn:hover {
@@ -105,4 +109,13 @@ h1 {
   top: 30%;
   width: 100px;
   height: auto;
+}
+.resultMessage {
+  color: #dcdada;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.roll-dice:disabled {
+  background: #abababb3;
 }
